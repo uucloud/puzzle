@@ -124,29 +124,45 @@ body{
 /*给Reset按钮设置属性*/
 #d1{
     left: 0px;
+    background-image: url(pic/f-0.jpg);
+    background-repeat:no-repeat;
 }
 #d2{
     left: 150px;
+    background-image: url(pic/f-1.jpg);
+    background-repeat:no-repeat;
 }
 #d3{
     left: 300px;
+    background-image: url(pic/f-2.jpg);
+    background-repeat:no-repeat;
 }
 #d4{
     top: 150px;
+    background-image: url(pic/f-3.jpg);
+    background-repeat:no-repeat;
 }
 #d5{
     top: 150px;
     left: 150px;
+    background-image: url(pic/f-4.jpg);
+    background-repeat:no-repeat;
 }
 #d6{
     top: 150px;
     left: 300px;
+    background-image: url(pic/f-5.jpg);
+    background-repeat:no-repeat;
 }
 #d7{
     top: 300px;
+    background-image: url(pic/f-6.jpg);
+    background-repeat:no-repeat;
 }
 #d8{
     left: 150px;
     top: 300px;
+    background-image: url(pic/f-7.jpg);
+    background-repeat:no-repeat;
 }
 /*这是预先给每个小方块按照顺序排好位置*/
