@@ -206,9 +206,10 @@ function main(){
     document.getElementById("d"+d[cblock]).style.top=d_posXY[nblock][1]+"px";
     stx=nx;
     sty=ny;
-    d[nblock]=d[(nx-1)*3+ny];
-
+    d[nblock]=d[cblock];
+    d[cblock]=0;
   }
+
 
   function IDAstar(x,y,step)
   {
@@ -216,23 +217,23 @@ function main(){
     var h=Astar();
     if(!h && zt()==123456780){
       for(var i=0;i<step;++i){
-        autoMove(ans[m[i]]);
-        // (function(i){
-        //   setTimeout(function(){
-        //     autoMove(ans[m[i]]);
-        //   },i*1000);
-        // })(i);
+        //  autoMove(ans[m[i]]);
+        (function(i){
+          setTimeout(function(){
+            autoMove(ans[m[i]]);
+          },i*200);
+        })(i);
       }
-      finish();
-      d[(stx-1)*3+sty]=0;
       ok=1;
+      start();
+      document.getElementById("win").innerHTML="完成";
       return;
     }
     if(step+h > deep) return;
     var now=zt();
     if(vis[now]) return;
     vis[now]=1;
-    for(var i=0;i<4;++i){
+    for(var i=0;i<4&&!ok;++i){
       var nex=x+fx[i],ney=y+fy[i];
       if(nex>=1 && nex<=3 && ney>=1 && ney<=3){
         m[step]=i;
@@ -240,6 +241,7 @@ function main(){
         a[x][y]=a[nex][ney];
         a[nex][ney]=temp;
         IDAstar(nex,ney,step+1);
+        if(ok) return;
         temp=a[x][y];
         a[x][y]=a[nex][ney];
         a[nex][ney]=temp;
