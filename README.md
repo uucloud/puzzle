@@ -1,3 +1,1 @@
-使用IDA*解决八数码问题的拼图游戏
-iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiibfjjjk
-[
+![puzzle](https://uucloud.github.io/puzzle/)
