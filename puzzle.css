@@ -144,13 +144,13 @@ body{
 }
 #d5{
     top: 100px;
-    left: 150px;
+    left: 100px;
     background-image: url(pic/f-4.jpg);
     background-repeat:no-repeat;
 }
 #d6{
     top: 100px;
-    left: 300px;
+    left: 200px;
     background-image: url(pic/f-5.jpg);
     background-repeat:no-repeat;
 }
