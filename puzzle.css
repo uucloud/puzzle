@@ -11,7 +11,7 @@ body{
 /* 给body设置100%的高度和宽度，这样就会根据浏览器屏幕大小自动适配 */
 #container{
     position: relative;
-    width: 620px;
+    width: 500px;
     height: 450px;
     margin: 0 auto;
     margin-top: 100px;
@@ -29,15 +29,15 @@ body{
     box-shadow: 0 0 10px #ffe171;
 }
 /* 这是游戏区的DIV，这个大小是计算出来的，取决于你的小方块的大小。这里我们设置小方块的大小为150px 150px，所以这个大小是150px*3，为450px */
-#game.div{
+#game div{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 99px;
+    height: 99px;
     box-shadow: 1px 1px 2px #777;
     background-color: #20a6fa;
     color: white;
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
     line-height: 100px;
     cursor: pointer;
     -webkit-transition: 0.3s;/*浏览器前缀，兼容其他浏览器 chrome*/
