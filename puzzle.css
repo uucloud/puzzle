@@ -29,7 +29,7 @@ body{
     box-shadow: 0 0 10px #ffe171;
 }
 /* 这是游戏区的DIV，这个大小是计算出来的，取决于你的小方块的大小。这里我们设置小方块的大小为150px 150px，所以这个大小是150px*3，为450px */
-#game div{
+#game.div{
     position: absolute;
     width: 100px;
     height: 100px;
