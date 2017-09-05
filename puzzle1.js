@@ -268,7 +268,7 @@ function main(){
 
 function show_ACMQQ()
 {
-  document.getElementByID("author").innerHTML = "QQ群：88837395";
+  document.getElementById("author").innerHTML = "QQ群：88837395";
 }
 
 window.onload=function(){
